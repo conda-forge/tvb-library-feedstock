@@ -28,7 +28,7 @@ requirements:
     - numpy
     - numba
     - numexpr
-    - matplotlib<=2.1.2
+    - matplotlib <=2.1.2
     - scikit-learn
     - scipy
 
