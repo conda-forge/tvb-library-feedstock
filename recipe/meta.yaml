@@ -1,5 +1,5 @@
 {% set name = 'tvb-library' %}
-{% set version = "1.5.9" %}
+{% set version = "2.0" %}
 
 package:
   name: {{ name }}
