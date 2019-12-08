@@ -1,20 +1,19 @@
 {% set name = 'tvb-library' %}
-{% set version = "1.5.9" %}
+{% set version = "2.0" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  md5: 372f5993cd1584c0145a8f91bf24feee
-  sha256: 6d622571d56f639b741a3323e061f58447c7f7e4a785a295d61d46866d1fcac0
+  md5: e9ac7b26ed854f4bb0d671f25dd0c9c3
+  sha256: a89bcd1949788d35722a1dc1e3bb8d5e32fa02a4eef977fd476ab6df18285e9b
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/t/tvb-library/{{ name }}-1.5.5.1.tar.gz
+  url: https://pypi.io/packages/source/t/tvb-library/{{ name }}-{{ version }}.tar.gz
 
 build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
-  skip: True  # [py>27]
 
 requirements:
   build:
@@ -22,14 +21,11 @@ requirements:
     - setuptools
   run:
     - python
-    - tvb-gdist
     - networkx
-    - nibabel
     - numpy
     - numba
     - numexpr
     - matplotlib
-    - scikit-learn
     - scipy
 
 test:
