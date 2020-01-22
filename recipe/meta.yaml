@@ -1,22 +1,20 @@
-{% set name = 'tvb-library' %}
 {% set version = "2.0" %}
 
 package:
-  name: {{ name }}
+  name: tvb-library
   version: {{ version }}
 
 source:
-  md5: e9ac7b26ed854f4bb0d671f25dd0c9c3
+  url: https://pypi.io/packages/source/t/tvb-library/tvb-library-{{ version }}.tar.gz
   sha256: a89bcd1949788d35722a1dc1e3bb8d5e32fa02a4eef977fd476ab6df18285e9b
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/t/tvb-library/{{ name }}-{{ version }}.tar.gz
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
+    - pip
     - python
     - setuptools
   run:
@@ -37,7 +35,7 @@ about:
   license: GPL-3.0
   license_family: GPL
   license_file: LICENSE
-  summary: 'A package for performing whole brain simulations'
+  summary: A package for performing whole brain simulations
   description: |
     The Virtual Brain Project (TVB Project) has the purpose of offering some |
     modern tools to the Neurosciences community, for computing, simulating |
