@@ -9,7 +9,7 @@ source:
   sha256: a89bcd1949788d35722a1dc1e3bb8d5e32fa02a4eef977fd476ab6df18285e9b
 
 build:
-  number: 1
+  number: 2
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
     - numpy
     - numba
     - numexpr
-    - matplotlib
+    - matplotlib-base
     - scipy
 
 test:
