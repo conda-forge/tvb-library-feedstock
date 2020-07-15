@@ -5,7 +5,7 @@ Home: http://www.thevirtualbrain.com/
 
 Package license: GPL-3.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A package for performing whole brain simulations
 
