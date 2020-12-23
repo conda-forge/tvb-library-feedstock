@@ -5,9 +5,13 @@ Home: http://www.thevirtualbrain.com/
 
 Package license: GPL-3.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tvb-library-feedstock/blob/master/LICENSE.txt)
 
 Summary: A package for performing whole brain simulations
+
+Development: https://github.com/the-virtual-brain/tvb-library
+
+Documentation: http://docs.thevirtualbrain.org/
 
 The Virtual Brain Project (TVB Project) has the purpose of offering some |
 modern tools to the Neurosciences community, for computing, simulating |
