@@ -1,4 +1,4 @@
-{% set version = "2.0.9" %}
+{% set version = "2.1" %}
 
 package:
   name: tvb-library
@@ -6,14 +6,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/tvb-library/tvb-library-{{ version }}.tar.gz
-  sha256: 0c3109c03665e3dd516fda12ba2155d718cd9933fb25b9f7bd0906851e937f39
+  sha256: 99c2817d9d341abd6d7ff07c4a827f58462d85a4dbb975e514840f362b3ca5cc
 
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - pip
     - python
     - setuptools
@@ -23,8 +23,10 @@ requirements:
     - numpy
     - numba
     - numexpr
+    - mako
     - matplotlib-base
     - scipy
+    - six
 
 test:
   imports:
