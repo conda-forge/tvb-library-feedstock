@@ -25,6 +25,7 @@ requirements:
     - numexpr
     - mako
     - matplotlib-base
+    - requests
     - scipy
     - six
 
