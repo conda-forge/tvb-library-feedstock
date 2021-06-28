@@ -19,6 +19,7 @@ requirements:
     - setuptools
   run:
     - python
+    - autopep8
     - networkx
     - numpy
     - numba
