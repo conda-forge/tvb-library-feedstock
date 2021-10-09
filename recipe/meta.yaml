@@ -1,4 +1,4 @@
-{% set version = "2.3" %}
+{% set version = "2.4" %}
 
 package:
   name: tvb-library
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/tvb-library/tvb-library-{{ version }}.tar.gz
-  sha256: 0595f2eca95e5ed4c7a1c88425914cc71d0ea7a9f4ec575b6a315ca2408ea801
+  sha256: f90a34a94310cb8e709d9ff888e0d066c1b5549a117ecf65516bae1872c5d0c9
 
 build:
   number: 0
