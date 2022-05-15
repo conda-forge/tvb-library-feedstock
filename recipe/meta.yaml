@@ -1,4 +1,4 @@
-{% set version = "2.4" %}
+{% set version = "2.5" %}
 
 package:
   name: tvb-library
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/tvb-library/tvb-library-{{ version }}.tar.gz
-  sha256: f90a34a94310cb8e709d9ff888e0d066c1b5549a117ecf65516bae1872c5d0c9
+  sha256: d3fc26cdee145d73c459eff9172fd5b8eeb4ef264a146a1f0aca062993123793
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -26,6 +26,7 @@ requirements:
     - numexpr
     - mako
     - matplotlib-base
+    - pylems
     - requests
     - scipy
     - six
@@ -36,7 +37,7 @@ test:
 
 about:
   home: http://www.thevirtualbrain.com/
-  license: GPL-3.0
+  license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
   summary: A package for performing whole brain simulations
