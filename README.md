@@ -3,7 +3,7 @@ About tvb-library
 
 Home: http://www.thevirtualbrain.com/
 
-Package license: GPL-3.0
+Package license: GPL-3.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tvb-library-feedstock/blob/main/LICENSE.txt)
 
