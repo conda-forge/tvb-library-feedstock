@@ -30,6 +30,8 @@ requirements:
     - requests
     - scipy
     - six
+    - deprecated
+    - ipywidgets
 
 test:
   imports:
