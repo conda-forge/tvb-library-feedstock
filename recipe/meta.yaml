@@ -27,7 +27,6 @@ requirements:
     - mako
     - matplotlib-base
     - pylems
-    - requests
     - scipy
     - six
     - deprecated
