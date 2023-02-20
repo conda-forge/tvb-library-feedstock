@@ -31,6 +31,7 @@ requirements:
     - six
     - deprecated
     - ipywidgets
+    - docutils
 
 test:
   imports:
