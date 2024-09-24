@@ -1,12 +1,12 @@
-{% set version = "2.9" %}
+{% set version = "2.9.1" %}
 
 package:
   name: tvb-library
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/t/tvb-library/tvb-library-{{ version }}.tar.gz
-  sha256: 0a65fa3d803ef8da3d69a0f27a13e40b79876ee6d5b627c34d0c9fc5c12697e6
+  url: https://pypi.io/packages/source/t/tvb-library/tvb_library-{{ version }}.tar.gz
+  sha256: a251f602bffe768e6184ffc14d3d6ad9f03be879a78062a7397c30a5f8878b41
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
     - python
     - autopep8
     - networkx
-    - numpy
+    - numpy <2
     - numba
     - numexpr
     - mako
