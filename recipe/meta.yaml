@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/t/tvb-library/tvb_library-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/t/tvb-library/tvb_library-{{ version }}.tar.gz
   sha256: a251f602bffe768e6184ffc14d3d6ad9f03be879a78062a7397c30a5f8878b41
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
