@@ -16,7 +16,7 @@ requirements:
   host:
     - pip
     - python
-    - setuptools
+    - hatchling
   run:
     - python
     - autopep8
@@ -26,7 +26,6 @@ requirements:
     - numexpr
     - mako
     - matplotlib-base
-    - pylems
     - scipy
     - six
     - deprecated
