@@ -21,7 +21,7 @@ requirements:
     - python
     - autopep8
     - networkx
-    - numpy <2
+    - numpy
     - numba
     - numexpr
     - mako
